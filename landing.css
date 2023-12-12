@@ -1,0 +1,158 @@
+body {
+   background-image: url('background.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30px;
+}
+
+.nav a {
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    animation: navbarani .9s ease forwards;
+}
+.nav a:hover{
+    color:gray;
+    border: none;
+    box-shadow: 0px 0px 10px 2px #d22e2e;
+}
+
+.nav img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px #685757;
+}
+
+.main{
+    height: 300px;
+    margin-top: 100px;
+}
+pre{
+    font-size: large;
+    font-weight: 300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    animation: navani 3s ease forwards;
+}
+span p{
+    margin: -25px 0px 0px 65px;
+    animation: navani 1s ease forwards;
+    animation: mainani 1s ease forwards;
+
+}
+h4{
+    margin-left: 68px;
+    animation: navani 3s ease forwards;
+}
+.btn{
+    color: #000000;
+    border: none;
+    margin: -10px 0px 0px 65px;
+}
+button:hover {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: 600;
+    
+}
+button{
+    border-radius: 5px;
+    animation: navani 3s ease forwards;
+}
+.img{
+    background-image: url('github.jpg');
+    width: 500px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    border: 5px solid #00000010;
+    border-radius: 30px;
+}
+
+.detail{
+    position: absolute;
+    top: 85%;
+    left:50%;
+}
+
+.detail p{
+    margin-top: -120px;
+}
+
+.image{
+    background-image: url('github1.png');
+    width: 500px;
+    height: 263px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 5px solid #00000005;
+    border-radius: 30px;
+    position: absolute;
+    top:70%;
+    left: 5%;
+}
+
+@keyframes navani{
+0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navbarani{
+    0% {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 4.4rem;
+    }
+
+    .main h3 {
+        color: #000;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 1.6rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        height: auto;
+    }
+
+    header {
+        height: auto;
+    }
+}
