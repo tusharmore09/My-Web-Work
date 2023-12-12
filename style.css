@@ -1,0 +1,172 @@
+
+body{
+    background-color:#AFC2D5;
+}
+.nav{
+    background-color: #0e0b0b;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+}
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+.nav-content a{
+    margin-left: 30px;
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.nav-content a:hover{
+    color: rgb(231, 90, 90);
+}
+
+.image{
+    background-image: url('Gym-Boy.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height:900px;
+    background-size: cover;
+    margin-top: -35px;
+    margin-bottom: 50px;
+}
+
+.image-content pre{
+    color:rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 60px;
+    padding-left: 100px;
+}
+.image-content pre{
+    color: rgb(226, 44, 44);
+    cursor: pointer;
+    width: auto;
+    transition: all 1s ease-in-out;
+    animation: quate 20s;
+}
+
+hr{
+    color: white;
+    height: 10px;
+}
+
+.footer{
+    background-color: rgba(80, 80, 70, 0.5);
+    color: black;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 20px;
+}
+.footer-content a{
+    font-weight: 100;
+    font-size: smaller;
+}
+.footer-content i {
+    color: red;
+}
+.footer-content h4 {
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    padding-top: 20px;
+}
+.footer-content p{
+    margin-top: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+     
+form{
+    margin-top: -200px;
+    padding-left: 80%;
+    animation:formani 15s;
+}
+table{
+    background-color: #00000080;
+    padding: 25px;
+    border-spacing: 10px;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+button:hover{
+    background-color: gray;
+    color: aliceblue;
+}
+th{
+    font-size:x-large;
+    font-weight: 600;
+    color: crimson;
+}
+#home{
+    background-color: gray;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+ #gallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #00000080;
+ }
+ .box-image {
+     height: 400px;
+     width: 450px;
+     background-size: cover;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ @media only screen and (max-width:1280px) {
+.box-image{
+    width: 100%;
+    height:100%;
+} 
+}
+@keyframes formani{
+    0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+}
+
+@keyframes quate {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
